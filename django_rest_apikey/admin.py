@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-import models
+from . import models
 
 class APIKeyAdmin(admin.ModelAdmin):
 	list_display = ('key', 'user', 'created_at')

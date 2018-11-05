@@ -1,6 +1,6 @@
 from rest_framework.authentication import TokenAuthentication
 
-import models
+from . import models
 
 class APIKeyAuthentication(TokenAuthentication):
 	keyword = 'API-Key'

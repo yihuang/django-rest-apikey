@@ -43,7 +43,7 @@ The `API-Key` header is looked by the class to authenticate the user.
 response = requests.get(
     url="http://0.0.0.0:8000/api/your_model",
     headers={
-        "Api-Key": "fd8b4a98c8f53035aeab410258430e2d86079c93",
+        "Authorization": "API-Key fd8b4a98c8f53035aeab410258430e2d86079c93",
     },
 )
 ```

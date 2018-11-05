@@ -5,7 +5,7 @@ import os
 
 class APIKey(models.Model):
 	key = models.CharField(max_length=40, primary_key=True)
-	user = models.ForeignKey(User)
+	user = models.ForeignKey(User, on_delete=models.CASCADE)
 	created_at = models.DateTimeField(auto_now_add=True)
 
 	def save(self, *args, **kwargs):
